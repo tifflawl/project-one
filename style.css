@@ -1,5 +1,52 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: lightgrey;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 10vh 80vh 10vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10vh;
+  background-color: grey;
+}
+
+nav div {
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+section {
+  display: flex;
+}
+
+aside {
+  background-color: cyan;
+}
+
+main {
+  background-color: magenta;
+}
+
+footer {
+  background-color: grey;
+}
+
+.flex-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav,
+footer {
+  grid-column: span 2;
 }
