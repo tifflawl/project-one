@@ -9,6 +9,27 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+a {
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:focus {
+}
+
+a:hover {
+  color: magenta;
+}
+
+a:active {
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -25,25 +46,29 @@ nav div {
   color: black;
 }
 
-section {
-  display: flex;
-}
-
 aside {
-  display: flex;
+  display: grid;
+  grid-template-rows: 0fr 0fr 0fr 1fr;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: baseline;
+  align-items: start;
   background-color: lightgray;
   font-weight: 600;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  line-height: 30px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: normal;
-  align-items: stretch;
+  justify-content: flex-start;
+  align-items: center;
   background-color: white;
+  overflow: auto;
 }
 
 footer {
